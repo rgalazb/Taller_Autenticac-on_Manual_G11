@@ -1,0 +1,7 @@
+<h3>tus historias</h3>
+
+<ul>
+  <% @histories.each do |history| %>
+  <li><%= history.title %> | <%= link_to 'Ver', history_path(history) %></li>
+  <% end %>
+</ul>
